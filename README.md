@@ -1,7 +1,5 @@
 # ▶️YouTube Comment  Classification And Sentiment Analysis
 
-![Sentiment Chart](./screenshots/1.png)
-![Comments Analysis](./screenshots/2.png)
 
 ## 📌 Overview
 
@@ -49,16 +47,8 @@ A web application that analyzes the sentiment of YouTube comments using Natural 
 - Node.js (v16+)
 - Python (3.8+)
 - npm/yarn
-- Git
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/shayan-tej/youtube-sentiment-analysis.git
-cd youtube-sentiment-analysis
-```
-
-### 2. Backend Setup
+### 1. Backend Setup
 
 ```bash
 cd server
@@ -69,17 +59,6 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt  # Create this file if it doesn't exist with: pip freeze > requirements.txt
 python -m textblob.download_corpora # For TextBlob corpora
 
-# Set up environment variables
-cp .env.example .env
-```
-
-Edit the `.env` file:
-
-```env
-FLASK_APP=app.py
-FLASK_ENV=development
-YOUTUBE_API_KEY=your_api_key_here
-```
 
 ### 3. Run the Application
 
@@ -92,13 +71,22 @@ cd server
 flask run
 ```
 
-**Frontend:**
+2.**Frontend:**
 
 ```bash
 cd client
 npm run dev
 ```
+3.
 
+
+   python -m venv venv
+   .\venv\Scripts\activate
+   python -m pip install --upgrade pip setuptools wheel
+   pip install -r requirements.txt
+   pip install regex
+
+   
 The application should now be running at `http://localhost:5173`
 
 ## 🔑 Environment Variables
@@ -141,16 +129,9 @@ youtube-sentiment/
 └── README.md
 ```
 
-## 📜 License
-
-MIT License
-
-## 🙏 Acknowledgments
-
-- TextBlob for sentiment analysis
-- Chart.js for data visualization
-- Pytube for YouTube data access
-FLASK_APP=app.py
-FLASK_ENV=development
-YOUTUBE_API_KEY=AIzaSyCPUVtxlVerifeMdXlvki8j1iRwIEDy7hE
+   python -m venv venv
+   .\venv\Scripts\activate
+   python -m pip install --upgrade pip setuptools wheel
+   pip install -r requirements.txt
+   pip install regex
 
